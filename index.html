@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kagagawan ni cy</title>
+    <!-- Include Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Include Font Awesome CSS for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      body {
+        background-color: beige;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh; 
+      }
+
+      .image-container {
+        position: absolute; 
+        width: 300px; 
+        height: 400px; 
+        border-radius: 200px 200px 0 0; 
+        overflow: hidden; 
+        border: 1px solid black;
+        left: 200px; 
+        top: 130px; 
+      }
+
+      .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+      }
+
+      .image-text {
+        position: absolute;
+        left: 110px;
+        top: 550px;
+      }
+
+      .image-text h1 {
+        font-family: "Courier New", Courier, monospace;
+        color: #333; /* Change the text color to dark gray */
+      }
+
+      .image-text2 {
+        position: absolute;
+        left: 170px;
+        top: 600px;
+      }
+
+      .image-text2 h1 {
+        font-family: "Courier New", Courier, monospace;
+        color: #333; 
+      }
+
+      .textbox {
+        position: absolute;
+        left: 265px;
+        top: 700px;
+        background-color: beige; 
+        padding: 10px;
+        border: 3px solid #333;
+        border-radius: 5px;
+        width: 150px;
+        height: 50px;
+        font-family: "Courier New", Courier, monospace; 
+        color: #333; 
+        text-align: center; 
+        font-weight: bold; 
+      }
+
+      
+      .icon-link {
+        color: #333; 
+        text-decoration: none; 
+      }
+
+      
+      .icon-link:hover {
+        color: #007bff; 
+      }
+
+      
+      .social-icons {
+        text-align: center;
+        margin-top: 20px; 
+      }
+
+      
+      .icons-container {
+        position: absolute;
+        left: 288px; 
+        top: 800px; 
+      }
+
+      
+      .icon {
+        font-size: 24px;
+        margin-right: 10px;
+        color: #333; 
+      }
+
+      
+      .right-text {
+        position: absolute;
+        right: 400px; 
+        top: 130px;  
+        width: 400px;
+        font-family: "Courier New", Courier, monospace;
+        color: #333; 
+        font-size: 20px; 
+      }
+      .button-container {
+        position: absolute;
+        right: 455px; 
+        top: 700px; 
+      }
+
+      .button {
+        background-color: beige; 
+        padding: 10px 20px;
+        border: 3px solid #333;
+        border-radius: 5px;
+        font-family: "Courier New", Courier, monospace; 
+        color: #333; 
+        text-align: center; 
+        font-weight: bold;
+        text-decoration: none; 
+        margin-right: 10px;
+      }
+      .contri-text {
+        position: absolute;
+        left: 400px; 
+        top: 1200px;
+        width: 400px;
+        font-family: "Courier New", Courier, monospace;
+        color: #333; 
+        font-size: 20px;
+      }
+      .contri-image {
+        position: absolute;
+        left: 850px; 
+        top: 1300px; 
+        width: 700px; 
+        height: 400px;
+        border-radius: 20px; 
+        border: 1px solid black; 
+      }
+      .hobbies-text {
+        position: absolute;
+        left: 800px; 
+        top: 2400px; 
+        width: 400px;
+        font-family: "Courier New", Courier, monospace;
+        color: #333; 
+        font-size: 20px; 
+      }
+      .hobbies-image {
+        position: absolute;
+        left: 200px; 
+        top: 2500px; 
+        width: 300px; 
+        height: 400px; 
+        border-radius: 20px; 
+        border: 1px solid black; 
+      }
+      .hobbies-description {
+        position: absolute;
+        left: 550px; 
+        top: 2600px; 
+        width: 500px;
+        font-family: "Courier New", Courier, monospace;
+        color: #333;
+        font-size: 16px; 
+      }
+      .hobs2-img {
+        position: absolute;
+        left: 1120px; 
+        top: 2700px; 
+        width: 400px; 
+        height: 400px; 
+        border-radius: 20px; 
+        border: 1px solid black; 
+      }
+      .hobs2-txt{
+        position: absolute;
+        left: 600px;
+        top: 2800px;
+        width: 500px;
+        font-family: 'Courier New', Courier, monospace;
+        color:#333
+        font-size 16px;
+      }
+      .val-img{
+        position: absolute;
+        left: 250px; 
+        top: 3200px; 
+        width: 500px; 
+        height: 300px; 
+        border-radius: 20px; /
+      
+
+
+      }
+      .cont-img{
+
+        position: absolute;
+        left: 300px; 
+        top: 1750px; 
+        width: 700px; 
+        height: 400px; 
+        border-radius: 20px;
+        border: 1px solid black; 
+      }
+
+      .val-txt{
+        position: absolute;
+        left: 800px;
+        top: 3250px;
+        width: 500px;
+        font-family: 'Courier New', Courier, monospace;
+        color:#333
+       
+
+
+      }
+
+      .back-button{
+        position: absolute;
+        right: 800px; 
+        top: 3600px; 
+
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="image-container">
+      <img src="images/aboutme.jpg" alt="Your Image" />
+    </div>
+    <div class="image-text">
+      <h1 class="font-weight-bold">Bagsic Cyrel Mhel Calibo</h1>
+    </div>
+    <div class="image-text2">
+      <h1 class="font-weight-bold">Computer Engineer</h1>
+    </div>
+
+    
+    <div class="textbox">
+      <p>Contacts</p>
+    </div>
+
+    <!-- Social media icons -->
+    <div class="icons-container">
+      <a class="icon-link" href="https://www.instagram.com/cyrellll/">
+        <i class="fab fa-instagram icon"></i>
+      </a>
+      <a class="icon-link" href="https://www.facebook.com/CyBagsic">
+        <i class="fab fa-facebook icon"></i>
+      </a>
+      <a class="icon-link" href="https://twitter.com/_cyrelll">
+        <i class="fab fa-twitter icon"></i>
+      </a>
+    </div>
+
+  
+    <div class="right-text" id="right-text">
+      <h1><b>About Me</b></h1>
+      <p><b>
+        Hello, My name is Bagsic Cyrel Mhel Calibo, but you can also call me Cy!
+        21 years old, and my birthday is on February 08, an Aquarius! I'm a
+        third year student in Holy Angel University. The course that I'm taking
+        up is Bachelor of Science in Computer Engineering. Ever since I was
+        little, I have always been interested in computers and how they work.</b>
+      </p>
+    </div>
+    <div class="button-container" >
+      <a class="button" href="#contri-text">Contributions</a>
+      <a class="button" href="#hobbies-text">My Hobbies</a>
+    </div>
+    <div class="contri-text" id="contri-text">
+      <h1><b>Contributions</b></h1>
+      <p><b>
+        As for our on going project, I have contributed in designing and coding
+        the History and Tourists page of our project.
+      </b>
+      </p>
+    </div>
+    <img class="cont-img" src="images/cont2.jpg">
+    <img
+      class="contri-image"
+      src="images/cont.JPG"
+      alt="Your Contributions Image"
+    />
+    <div class="hobbies-text" id="hobbies-text">
+      <h1><b>My Hobbies</b></h1>
+    </div>
+    <img class="hobbies-image" src="images/hobs.JPG" alt="Hobby 1" />
+
+    <div class="hobbies-description">
+      <p><b>
+        Recently, I started to workout, it helps eases and clear my mind off
+        things. I usually workout 4 to 5 times a week depending on my schedule.
+      </b>
+      </p>
+    </div>
+
+
+    <img class="hobs2-img" src="images/hobs2.jpg" alt="hobs2" />
+    <div class="hobs2-txt">
+      <p><b>When we have our free time, I love to drive around and go on roadtrips with my friends. It is fun to always
+        visit new places and try out different things.</b>
+      </p>
+    </div>
+    <img class="val-img" src="images/val.jpg" alt="val-img">
+    <div class="back-button">
+      <a class="button" href="#right-text">Back to About Me</a>
+    </div>
+    <div class="val-txt">
+
+<p><b>Videos games are on of the things I do to get rid of boredom. Valorant one of the games that I have been playing for a long time.
+  It is a FPS 5 against 5 game, first to score 13 points wins the game.</b>
+</p>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+  </body>
+</html>
